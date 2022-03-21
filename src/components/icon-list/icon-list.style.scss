@@ -1,0 +1,26 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.icon-container{
+    display: flex;
+    gap: 1.5rem;
+
+    .link{
+        font-size: 2.8rem;
+        color: $color-primary;
+    }
+
+    .circle-icon{
+        background-color: $color-primary;
+        color: $color-secondary;
+        font-size: 2rem;
+        height: 3.598rem;
+        width: 3.598rem;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

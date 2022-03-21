@@ -1,0 +1,34 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.footer{
+    padding: 3rem 6.1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__owner, &__list{
+        font-family: sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    &__owner{
+        color: $color-primary;
+    }
+    
+    &__list{
+        display: flex;
+        gap: 3rem;
+        
+        &--item{
+            list-style: none;
+        }
+        &--link{
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+}

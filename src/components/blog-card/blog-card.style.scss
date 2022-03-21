@@ -1,0 +1,34 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.blog{
+
+    // width: min-content;
+
+    &__img-container{
+        height: 22.5rem;
+        overflow: hidden;
+
+        @include response(phone){
+            height: 35rem;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__text{
+        font-size: 1.8rem;
+        line-height: 1.3;
+        padding: 2rem 0;
+
+        @include response(phone){
+            font-size: 2.2rem;
+
+            margin-bottom: 2rem;
+        }
+    }
+}

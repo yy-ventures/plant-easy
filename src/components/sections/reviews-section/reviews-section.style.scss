@@ -1,0 +1,17 @@
+@import '../../../sass/mixins.scss';
+@import '../../../sass/typography.scss';
+@import '../../../sass/variables.scss';
+
+.reviews-section{
+    padding: 6.1rem;
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: $color-primary;
+    }
+
+    .card{
+        padding: 0 1rem;
+        margin: 0;
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.input{
+    width: 70rem;
+    font-size: 2.4rem;
+    text-align: center;
+    color: $color-white;
+    background-color: transparent;
+    border: none;
+    border-bottom: .3rem solid $color-white;
+
+    &::placeholder{
+        color: $color-white;
+    }
+    
+    &:focus{
+        outline: none !important;
+        border-bottom: .3rem solid $color-primary;
+    }
+    &:focus::placeholder{
+        opacity: .6;
+    }
+}

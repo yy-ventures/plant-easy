@@ -1,0 +1,22 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.btn{
+    font-family: sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn-primary{
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.btn-secondary{
+    background-color: $color-white;
+    color: $color-primary;
+}

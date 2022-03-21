@@ -1,0 +1,17 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.card{
+    margin-bottom: 6rem;
+    &__img-container{
+        height: 63.7rem;
+        margin-bottom: 1rem;
+        background-size: cover;
+    }
+    &__text{
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+}

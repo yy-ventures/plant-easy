@@ -1,0 +1,75 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.sidebar{
+    padding: 10rem;
+    width: 100%;
+    background-color: $color-primary;
+
+    position: absolute;
+    z-index: 1111111;
+    top: 0;
+    // right: 100%;
+
+    transition: all .4s ease-in-out;
+
+    &__heading-container{
+        margin-bottom: 7.9rem;
+        position: relative;
+
+        .img-container{
+            height: 32.5rem;
+            width: 25.77rem;
+            margin: 0 auto;
+
+            .img{
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .heading{
+            font-size: 12rem !important;
+            color: $color-white !important;
+            white-space: nowrap;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__navigation{
+
+        .list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.8rem;
+            &__item{
+                list-style: none;
+                font-size: 2.4rem;
+                &--link{
+                    text-decoration: none;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    &__btn-close{
+        background-color: transparent;
+        border: none;
+        height: 5.4rem;
+        width: 5.4rem;
+        cursor: pointer;
+
+        position: absolute;
+        top: 11.8rem;
+        right: 6.3rem;
+
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}

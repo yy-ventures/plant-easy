@@ -1,0 +1,26 @@
+.header{
+    padding: 8rem 6.1rem 2rem 6.1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo-container{
+        height: 11.3rem;
+
+        &--logo{
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__menu-btn{
+        height: 3.3rem;
+        border: none;
+        cursor: pointer;
+
+        &--icon{
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
