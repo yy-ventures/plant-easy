@@ -127,21 +127,12 @@ export default function Home() {
             <BlogsSection/>
           </Fade>
         </div>
-<<<<<<< HEAD
         <div className="home__contact">
           {/* <Fade bottom>
             <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
             <form className='home__contact--form' action="">
               <Input type='text' placeholder='Email' />
               <Button primary text='Submit'/>
-=======
-        <div  className="home__contact">
-          <Fade bottom>
-            <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
-            <form ref={form} className='home__contact--form' onSubmit={sendEmail}>
-              <Input type='email' placeholder='Email' name='email_address'/>
-              <Button type='submit' primary text='Submit'/>
->>>>>>> 048f76500f07ff83f6a8cdd05094d8f10a2d93f4
             </form>
             <h4 className='contact-heading'>Contact</h4>
             <p className='contact-info'>info@planteasy.com | Phone: +880-XXX-XXXXX</p>
