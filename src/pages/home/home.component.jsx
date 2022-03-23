@@ -30,20 +30,9 @@ import '../../sass/typography.scss';
 
 export default function Home() {
   const form = useRef();
-<<<<<<< HEAD
-
-=======
-  
-// console.log(form);
->>>>>>> 048f76500f07ff83f6a8cdd05094d8f10a2d93f4
   const sendEmail = (e) => {
     console.log(e)
     e.preventDefault();
-<<<<<<< HEAD
-
-=======
-// console.log(form);
->>>>>>> 048f76500f07ff83f6a8cdd05094d8f10a2d93f4
     emailjs.sendForm('service_reo4yle', 'template_u7h8lve', form.current, 'user_o5Q1fksLSPlNeoTHcjWJA')
       .then((result) => {
           console.log(result.text);
