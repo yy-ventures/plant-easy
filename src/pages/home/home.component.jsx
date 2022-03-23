@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, {useState, useRef} from 'react';
+=======
+import React, {useState , useRef} from 'react';
+>>>>>>> 048f76500f07ff83f6a8cdd05094d8f10a2d93f4
 
 // IMAGE
 import heroImage from '../../assets/images/image-1.png';
@@ -26,10 +30,20 @@ import '../../sass/typography.scss';
 
 export default function Home() {
   const form = useRef();
+<<<<<<< HEAD
 
+=======
+  
+// console.log(form);
+>>>>>>> 048f76500f07ff83f6a8cdd05094d8f10a2d93f4
   const sendEmail = (e) => {
+    console.log(e)
     e.preventDefault();
+<<<<<<< HEAD
 
+=======
+// console.log(form);
+>>>>>>> 048f76500f07ff83f6a8cdd05094d8f10a2d93f4
     emailjs.sendForm('service_reo4yle', 'template_u7h8lve', form.current, 'user_o5Q1fksLSPlNeoTHcjWJA')
       .then((result) => {
           console.log(result.text);
@@ -113,12 +127,21 @@ export default function Home() {
             <BlogsSection/>
           </Fade>
         </div>
+<<<<<<< HEAD
         <div className="home__contact">
           {/* <Fade bottom>
             <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
             <form className='home__contact--form' action="">
               <Input type='text' placeholder='Email' />
               <Button primary text='Submit'/>
+=======
+        <div  className="home__contact">
+          <Fade bottom>
+            <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
+            <form ref={form} className='home__contact--form' onSubmit={sendEmail}>
+              <Input type='email' placeholder='Email' name='email_address'/>
+              <Button type='submit' primary text='Submit'/>
+>>>>>>> 048f76500f07ff83f6a8cdd05094d8f10a2d93f4
             </form>
             <h4 className='contact-heading'>Contact</h4>
             <p className='contact-info'>info@planteasy.com | Phone: +880-XXX-XXXXX</p>
