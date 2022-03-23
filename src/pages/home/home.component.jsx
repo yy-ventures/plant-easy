@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState , useRef} from 'react';
 
 // IMAGE
 import heroImage from '../../assets/images/image-1.png';
@@ -26,11 +26,13 @@ import './home.style.scss';
 import '../../sass/typography.scss';
 
 export default function Home() {
-  // const form = useRef();
-
+  const form = useRef();
+  
+// console.log(form);
   const sendEmail = (e) => {
+    console.log(e)
     e.preventDefault();
-console.log(form.current);
+// console.log(form);
     emailjs.sendForm('service_reo4yle', 'template_u7h8lve', form.current, 'user_o5Q1fksLSPlNeoTHcjWJA')
       .then((result) => {
           console.log(result);
@@ -114,10 +116,10 @@ console.log(form.current);
             <BlogsSection/>
           </Fade>
         </div>
-        <div className="home__contact">
+        <div  className="home__contact">
           <Fade bottom>
             <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
-            <form className='home__contact--form' onSubmit={sendEmail}>
+            <form ref={form} className='home__contact--form' onSubmit={sendEmail}>
               <Input type='email' placeholder='Email' name='email_address'/>
               <Button type='submit' primary text='Submit'/>
             </form>
