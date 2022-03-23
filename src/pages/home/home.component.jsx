@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, {useState, useRef} from 'react';
-=======
-import React, {useState , useRef} from 'react';
->>>>>>> 048f76500f07ff83f6a8cdd05094d8f10a2d93f4
 
 // IMAGE
 import heroImage from '../../assets/images/image-1.png';
