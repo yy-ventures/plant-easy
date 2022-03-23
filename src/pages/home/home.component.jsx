@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 
 // IMAGE
 import heroImage from '../../assets/images/image-1.png';
@@ -19,23 +19,22 @@ import Input from '../../components/input/input.component';
 
 import ReviewsSection from '../../components/sections/reviews-section/reviews-section.component';
 import BlogsSection from '../../components/sections/blogs-section/blogs-section.component';
-
 import emailjs from '@emailjs/browser';
 
 import './home.style.scss';
 import '../../sass/typography.scss';
 
 export default function Home() {
-  // const form = useRef();
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-console.log(form.current);
+
     emailjs.sendForm('service_reo4yle', 'template_u7h8lve', form.current, 'user_o5Q1fksLSPlNeoTHcjWJA')
       .then((result) => {
-          console.log(result);
+          console.log(result.text);
       }, (error) => {
-          console.log(error);
+          console.log(error.text);
       });
   };
   return (
@@ -115,15 +114,25 @@ console.log(form.current);
           </Fade>
         </div>
         <div className="home__contact">
-          <Fade bottom>
+          {/* <Fade bottom>
             <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
-            <form className='home__contact--form' onSubmit={sendEmail}>
-              <Input type='email' placeholder='Email' name='email_address'/>
-              <Button type='submit' primary text='Submit'/>
+            <form className='home__contact--form' action="">
+              <Input type='text' placeholder='Email' />
+              <Button primary text='Submit'/>
             </form>
             <h4 className='contact-heading'>Contact</h4>
             <p className='contact-info'>info@planteasy.com | Phone: +880-XXX-XXXXX</p>
-          </Fade>
+          </Fade> */}
+          <div>
+            <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
+            <form ref={form} onSubmit={sendEmail}>
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <input type="submit" value="Send" />
+            </form>
+            <h4 className='contact-heading'>Contact</h4>
+            <p className='contact-info'>info@planteasy.com | Phone: +880-XXX-XXXXX</p>
+          </div>
         </div>
     </div>
   )
