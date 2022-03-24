@@ -189,7 +189,6 @@
         background-image: url('../../assets/images/contact-bg.png');
         background-size: cover;
         background-position: center;
-
         &--heading{
             font-size: 8rem;
             font-weight: 700;
@@ -219,6 +218,44 @@
             align-items: center;
             gap: 2rem;
             margin-bottom: 2rem;
+            .input{
+                width: 70rem;
+                font-size: 2.4rem;
+                text-align: center;
+                color: $color-white;
+                background-color: transparent;
+                border: none;
+                border-bottom: .3rem solid $color-white;
+                margin-bottom: 3rem;
+            
+                &::placeholder{
+                    color: $color-white;
+                }
+                
+                &:focus{
+                    outline: none !important;
+                    border-bottom: .3rem solid $color-primary;
+                }
+                &:focus::placeholder{
+                    opacity: .6;
+                }
+            }
+            .btn{
+                font-family: sans-serif;
+                font-size: 2.4rem;
+                font-weight: 600;
+                padding: 1rem 4rem;
+                border: none;
+                border-radius: 50px;
+            }
+            .btn-primary{
+                background-color: $color-primary;
+                color: $color-white;
+            }
+            .btn-secondary{
+                background-color: $color-white;
+                color: $color-primary;
+            }
         }
         .contact-heading{
             font-family: sans-serif;
