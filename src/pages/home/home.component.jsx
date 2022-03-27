@@ -16,6 +16,7 @@ import IconList from '../../components/icon-list/icon-list.component';
 import Button from '../../components/button/button.component';
 import PlantCard from '../../components/plant-card/plant-card.component';
 import Input from '../../components/input/input.component';
+import FeaturedIn from '../../components/featured-in/featured-in.component';
 
 import ReviewsSection from '../../components/sections/reviews-section/reviews-section.component';
 import BlogsSection from '../../components/sections/blogs-section/blogs-section.component';
@@ -112,26 +113,23 @@ export default function Home() {
             <BlogsSection/>
           </Fade>
         </div>
-        <div className="home__contact">
-          {/* <Fade bottom>
-            <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
-            <form className='home__contact--form' action="">
-              <Input type='text' placeholder='Email' />
-              <Button primary text='Submit'/>
-            </form>
-            <h4 className='contact-heading'>Contact</h4>
-            <p className='contact-info'>info@planteasy.com | Phone: +880-XXX-XXXXX</p>
-          </Fade> */}
-          <div>
-            <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
-            <form ref={form} onSubmit={sendEmail}>
-              <label>Email</label>
-              <input type="email" name="user_email" />
-              <input type="submit" value="Send" />
-            </form>
-            <h4 className='contact-heading'>Contact</h4>
-            <p className='contact-info'>info@planteasy.com | Phone: +880-XXX-XXXXX</p>
-          </div>
+        <div className="home__featured">
+          <h2>Featured in</h2>
+          <Fade bottom>
+            <FeaturedIn/>
+          </Fade>
+        </div>
+        <div className='home__contact'>
+          <h2 className='home__contact--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>
+          <form className='home__contact--form' ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder='Name'/>
+            <input type="tel" name="user_phone" placeholder='Phone'/>
+            <input type="email" name="user_email" placeholder='Email'/>
+            <textarea name="user_email" maxLength='300' placeholder='Your Message'/>
+            <input type="submit" value="Submit" className='btn btn-primary'/>
+          </form>
+          <h4 className='contact-heading'>Contact</h4>
+          <p className='contact-info'>info@planteasy.com | Phone: +880-XXX-XXXXX</p>
         </div>
     </div>
   )

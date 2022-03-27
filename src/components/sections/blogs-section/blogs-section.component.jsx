@@ -20,29 +20,29 @@ export default class BlogsSection extends Component {
   render() {
 
     var settings = {
-        dots: false,
-        arrows:true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 641,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
+      dots: false,
+      arrows:true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 641,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
           }
-        ]
-      };
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
 
     return (
         <div className='blogs-section'>

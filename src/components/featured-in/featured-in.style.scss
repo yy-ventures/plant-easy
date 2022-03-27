@@ -1,0 +1,40 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.featured--list{
+    margin-block: 8rem;
+
+    .card{
+        margin-inline: 1rem;
+
+        .img-container{
+            // height: 9rem;
+            margin-inline: 2rem;
+
+            position: relative;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .mask{
+                background-color: rgba(196, 196, 196, 0.39);
+
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+
+            }
+
+        }
+        :hover .mask{
+            background-color: transparent;
+        }
+    }
+
+}
