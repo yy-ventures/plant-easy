@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { transitions, positions, Provider as AlertProvider } from 'react-alert'
+import { types, transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
 import './index.css'
 import App from './App'
-import { types } from 'react-alert'
 
 // optional configuration
 const options = {

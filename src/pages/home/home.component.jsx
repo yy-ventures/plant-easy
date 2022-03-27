@@ -1,5 +1,6 @@
 import React, {useState, useRef} from 'react';
 import { useAlert } from 'react-alert'
+import emailjs from '@emailjs/browser';
 
 // IMAGE
 import heroImage from '../../assets/images/image-1.png';
@@ -21,7 +22,6 @@ import Textarea from '../../components/textarea/textarea.component';
 
 import ReviewsSection from '../../components/sections/reviews-section/reviews-section.component';
 import BlogsSection from '../../components/sections/blogs-section/blogs-section.component';
-import emailjs from '@emailjs/browser';
 
 import './home.style.scss';
 import '../../sass/typography.scss';
@@ -32,7 +32,7 @@ export default function Home() {
   
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_reo4yle', 'template_u7h8lve', form.current, 'user_o5Q1fksLSPlNeoTHcjWJA')
+    emailjs.sendForm('service_1yea738', 'template_u7h8lve', form.current, 'user_o5Q1fksLSPlNeoTHcjWJA')
     .then((result) => {
       alert.show("Thank you! we have received your query!")
       form.current.reset()
@@ -123,7 +123,7 @@ export default function Home() {
             <form ref={form} onSubmit={sendEmail} className='home__contact--form'>
               <input type="text" name="user_name" placeholder="Full Name" className='input' required />
               <input type="text" name="contact_number" placeholder='Phone Number' className='input' required />
-              <input type="email" name="user_email" placeholder="E-mail Address" className='input' required/>
+              <input type="email" name="user_email" placeholder="E-mail Address" className='input' required />
               <textarea name="message" placeholder='Your Message' className='input' rows='4' required />
               <input type="submit" value="Send" className='btn btn-primary' />
             </form>
