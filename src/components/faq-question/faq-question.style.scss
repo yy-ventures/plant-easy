@@ -1,0 +1,44 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.question-container{
+    &__heading{
+        border: 2px solid $color-primary;
+        padding: 2rem 4rem;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        .icon-container{
+            height: 2rem;
+
+            transition: all .7s ease-out;
+
+            img{
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    &__body{
+        padding: .7rem 4rem;
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height .8s ease-out;
+    }
+}
+
+.active{
+    max-height: 50rem;
+
+    @include response(phone){
+        max-height: 70rem;
+    }
+}
+.rotate{
+    transform: rotate(180deg);
+}

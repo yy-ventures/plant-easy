@@ -44,7 +44,7 @@ export default class FeaturedIn extends Component {
                 <div className='card'>
                     <a href="#">
                         <div className="img-container">
-                            <div className="mask"></div>
+                            {/* <div className="mask"></div> */}
                             <img src={logo1} alt="logo" />
                         </div>
                     </a>
@@ -52,7 +52,7 @@ export default class FeaturedIn extends Component {
                 <div className='card'>
                     <a href="#">
                         <div className="img-container">
-                            <div className="mask"></div>
+                            {/* <div className="mask"></div> */}
                             <img src={logo1} alt="logo" />                            
                         </div>
                     </a>
@@ -60,7 +60,7 @@ export default class FeaturedIn extends Component {
                 <div className='card'>
                     <a href="#">
                         <div className="img-container">
-                            <div className="mask"></div>
+                            {/* <div className="mask"></div> */}
                             <img src={logo1} alt="logo" />                            
                         </div>
                     </a>
@@ -68,7 +68,7 @@ export default class FeaturedIn extends Component {
                 <div className='card'>
                     <a href="#">
                         <div className="img-container">
-                            <div className="mask"></div>
+                            {/* <div className="mask"></div> */}
                             <img src={logo1} alt="logo" />                            
                         </div>
                     </a>
@@ -76,7 +76,7 @@ export default class FeaturedIn extends Component {
                 <div className='card'>
                     <a href="#">
                         <div className="img-container">
-                            <div className="mask"></div>
+                            {/* <div className="mask"></div> */}
                             <img src={logo1} alt="logo" />                            
                         </div>
                     </a>

@@ -1,0 +1,32 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/typography.scss';
+@import '../../sass/variables.scss';
+
+.faq{
+    &__hero{
+        padding: 21.5rem 15.5rem;
+        background-image: url('../../assets/images/faq-hero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        &--heading{
+            color: $color-primary;
+            font-size: 8rem;
+
+            span{
+                display: block;
+            }
+        }
+
+        @include response(phone){
+            padding: 15rem 10rem;
+        }
+    }
+    &__questions{
+        padding: 10rem 15.5rem;
+
+        @include response(phone){
+            padding: 5rem;
+        }
+    }
+}
