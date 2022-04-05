@@ -51,7 +51,7 @@ export default class ReviewsSection extends Component {
                     <ReviewerCard 
                         image={clientSumaiya}
                         name='Sumaiya Alam'
-                        comment="They not only answered all my questions with patience prior to ordering but also delivered all the plants on time on a one-day notice. The packaging were secure, and the quality of the plants, as you can see, were great. They were also kind enough to offer a brief instruction explaining how to offer specific light requirements, even explaining how to water the plant correctly. Thank youuu, Plant Easy! 💛"
+                        comment="They not only answered all my questions with patience prior to ordering but also delivered all the plants on time on a one-day notice. The packaging were secure, and the quality of the plants, as you can see, were great. They were also kind enough to offer a brief instruction explaining how to offer specific light requirements, even explaining how to water the plant correctly. Thank youuu, Plant Easy!"
                     />
                 </div>
                 <div className='card'>
