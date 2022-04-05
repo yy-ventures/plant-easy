@@ -32,7 +32,7 @@ export default function ContactSection() {
         </form>
         
         <h4 className='contact-heading'>Contact</h4>
-        <p className='contact-info'>info@planteasy.com | Phone: +880-XXX-XXXXX</p>
+        <p className='contact-info'>plant.easy.bd@gmail.com | Phone: +880-1309-008355</p>
     </div>
   )
 }

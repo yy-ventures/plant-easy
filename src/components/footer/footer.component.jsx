@@ -9,11 +9,11 @@ export default function Footer() {
       <p className='footer__owner'>©2022 by Plant Easy</p>
       <ul className='footer__list'>
         <li className='footer__list--item'>
-          <a className='footer__list--link' href="#">Find us on YouTube</a>
+          <a className='footer__list--link' target='_blank' href="https://www.youtube.com/channel/UC_2u8fhhtXMDsla2-S-kp2A">Find us on YouTube</a>
         </li>
         <li className='footer__list--item'>
           <Link to='/faq' className='footer__list--link'>
-            <span href="#">FAQs</span>
+            <span>FAQs</span>
           </Link>
         </li>
       </ul>

@@ -5,7 +5,8 @@ import Slider from "react-slick";
 import ReviewerCard from '../../reviewer-card/reviewer-card.component';
 
 // IMAGE
-import reviewImage from '../../../assets/images/review-image.png';
+import clientSumaiya from '../../../assets/images/client-img/sumaiya-alam.jpg';
+import clientTashfia from '../../../assets/images/client-img/tashfia-zakir.jpg';
 
 import './reviews-section.style.scss';
 import '../../../sass/typography.scss';
@@ -48,39 +49,18 @@ export default class ReviewsSection extends Component {
             <Slider {...settings}>
                 <div className='card'>
                     <ReviewerCard 
-                        image={reviewImage}
-                        name='Inshirah Ali'
-                        comment="​I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font."
+                        image={clientSumaiya}
+                        name='Sumaiya Alam'
+                        comment="They not only answered all my questions with patience prior to ordering but also delivered all the plants on time on a one-day notice. The packaging were secure, and the quality of the plants, as you can see, were great. They were also kind enough to offer a brief instruction explaining how to offer specific light requirements, even explaining how to water the plant correctly. Thank youuu, Plant Easy! 💛"
                     />
                 </div>
                 <div className='card'>
                     <ReviewerCard 
-                        image={reviewImage}
-                        name='Inshirah Ali'
-                        comment="​I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font."
+                        image={clientTashfia}
+                        name='Tashfia Zakir'
+                        comment="This is my second purchase from Plant Easy and all I can say is that I keep coming back to them because of their service. I loveeee plants but am very bad at taking care of them. But they have always been supportive with every query I have had."
                     />
-                </div>
-                <div className='card'>
-                    <ReviewerCard 
-                        image={reviewImage}
-                        name='Inshirah Ali'
-                        comment="​I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font."
-                    />
-                </div>
-                <div className='card'>
-                    <ReviewerCard 
-                        image={reviewImage}
-                        name='Inshirah Ali'
-                        comment="​I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font."
-                    />
-                </div>
-                <div className='card'>
-                    <ReviewerCard 
-                        image={reviewImage}
-                        name='Inshirah Ali'
-                        comment="​I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font."
-                    />
-                </div>
+                </div>                
             </Slider>
         </div>
     )

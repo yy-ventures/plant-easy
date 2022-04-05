@@ -30,6 +30,7 @@ export default function Home() {
 
   return (
     <div className='home'>
+        <div id='home'></div>
         <div className="home__hero">
           <Zoom>
             <div className="small-img">
@@ -63,6 +64,7 @@ export default function Home() {
             </div>
           </Fade>
         </div>
+        <div id='shop'></div>
         <div className="home__our-plants">
           <div className="home__our-plants--col-left">
             <Bounce bottom>

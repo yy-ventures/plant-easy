@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 // COMPONENT
 import IconList from '../icon-list/icon-list.component'
@@ -21,22 +22,18 @@ export default function Sidebar({sidebar, showSidebar}) {
         <div className="sidebar__navigation">
             <ul className="list">
             <li className="list__item">
-                <a className='list__item--link' href="#">Home</a>
+                <a className='list__item--link' onClick={showSidebar} href="#home">Home</a>
             </li>
             <li className="list__item">
-                <a className='list__item--link' href="#">Shop</a>
+                <a className='list__item--link' onClick={showSidebar} href="#shop">Shop</a>
             </li>
             <li className="list__item">
                 <IconList withBackground/>
             </li>
             <li className="list__item">
-                <a className='list__item--link' href="#">Terms & Conditions</a>
-            </li>
-            <li className="list__item">
-                <a className='list__item--link' href="#">Shipping & Returns</a>
-            </li>
-            <li className="list__item">
-                <a className='list__item--link' href="#">FAQs</a>
+                <Link to='/faq' className='list__item--link' onClick={showSidebar}>
+                    <span>FAQs</span>
+                </Link>
             </li>
             </ul>
         </div>
