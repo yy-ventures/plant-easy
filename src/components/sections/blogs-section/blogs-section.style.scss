@@ -6,9 +6,12 @@
     padding: 6.1rem 6.1rem 8rem 6.1rem;
     color: $color-white;
     background-color: $color-primary;
-
     .card{
         padding: 0 2rem;
         margin: 0;
+    }
+
+    .slick-track{
+        margin-bottom: 2rem;
     }
 }
