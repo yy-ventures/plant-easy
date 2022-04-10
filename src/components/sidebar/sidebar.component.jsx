@@ -22,10 +22,10 @@ export default function Sidebar({sidebar, showSidebar}) {
         <div className="sidebar__navigation">
             <ul className="list">
             <li className="list__item">
-                <a className='list__item--link' onClick={showSidebar} href="#home">Home</a>
+                <a className='list__item--link' onClick={showSidebar} href="/#home">Home</a>
             </li>
             <li className="list__item">
-                <a className='list__item--link' onClick={showSidebar} href="#shop">Shop</a>
+                <a className='list__item--link' onClick={showSidebar} href="/#shop">Shop</a>
             </li>
             <li className="list__item">
                 <IconList withBackground/>

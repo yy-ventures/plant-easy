@@ -5,12 +5,12 @@
 .faq{
     &__hero{
         padding: 21.5rem 15.5rem;
-        background-image: url('../../assets/images/faq-hero.png');
+        background-image: url('../../assets/images/faq-hero-1.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
         &--heading{
-            color: $color-primary;
+            color: $color-white;
             font-size: 8rem;
 
             span{

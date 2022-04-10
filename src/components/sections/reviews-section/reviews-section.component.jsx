@@ -7,6 +7,9 @@ import ReviewerCard from '../../reviewer-card/reviewer-card.component';
 // IMAGE
 import clientSumaiya from '../../../assets/images/client-img/sumaiya-alam.jpg';
 import clientTashfia from '../../../assets/images/client-img/tashfia-zakir.jpg';
+import clientDighi from '../../../assets/images/client-img/dighi-tabassum.jpg';
+import clientMunzereen from '../../../assets/images/client-img/munzereen-shahid.jpg';
+import clientSadafuzzamani from '../../../assets/images/client-img/sadafuzzamani.jpg';
 
 import './reviews-section.style.scss';
 import '../../../sass/typography.scss';
@@ -61,6 +64,28 @@ export default class ReviewsSection extends Component {
                         comment="This is my second purchase from Plant Easy and all I can say is that I keep coming back to them because of their service. I loveeee plants but am very bad at taking care of them. But they have always been supportive with every query I have had."
                     />
                 </div>                
+                <div className='card'>
+                    <ReviewerCard 
+                        image={clientDighi}
+                        name='Dighi Tabassum'
+                        comment="Amazing service and beautiful plants. The plant was clean and healthy and the terracotta pot was so pretty! Really loved the service, cooperative and patient, delivered on the day I asked. They also added wrapping and gift note free of charge for Valentines day, how sweet is that!"
+                    />
+                </div>                
+                <div className='card'>
+                    <ReviewerCard 
+                        image={clientMunzereen}
+                        name='Munzereen Shahid'
+                        comment="I recently ordered a Portulaca and a Juniper. My Portulaca has bloomed and given very beautiful yellow flowers too ❤ Thank you for being amazing, Plant Easy ❤ Looking forward to ordering more beauties in the future!"
+                    />
+                </div>                
+                <div className='card'>
+                    <ReviewerCard 
+                        image={clientSadafuzzamani}
+                        name='Sadafuzzamani'
+                        comment="Absolutely loved the plants I received from Plant Easy. They’re extremely organized (you’ll be surprised, they made a PPT presentation showcasing all the plants)! From customer management to product delivery, I was awe struck by their solemnity.
+                        Can’t wait to make a tiny forest in my balcony!"
+                    />
+                </div>              
             </Slider>
         </div>
     )

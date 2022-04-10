@@ -22,7 +22,7 @@ export default function ContactSection() {
 
   return (
     <div className='contact-section'>
-        <h2 className='contact-section--heading'>Follow Plant Easy on <span className='social'>Facebook</span>, <span className='social'>Instagram</span>, <span className='social'>Tiktok</span> and <span className='social'>Youtube</span></h2>            
+        <h2 className='contact-section--heading'>Those Who Make Us Stronger!</h2>            
         <form ref={form} onSubmit={sendEmail} className='contact-section--form'>
             <input type="text" name="user_name" placeholder="Full Name" className='input' required />
             <input type="text" name="contact_number" placeholder='Phone Number' className='input' required />

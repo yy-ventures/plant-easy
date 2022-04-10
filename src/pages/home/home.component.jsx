@@ -1,8 +1,8 @@
 import React, {useState, useRef} from 'react';
 
 // IMAGE
-import heroImage from '../../assets/images/image-1.png';
-import heroImage2 from '../../assets/images/image-2.png';
+import heroImage from '../../assets/images/image-1.jpg';
+import heroImage2 from '../../assets/images/image-2.jpg';
 import plantImage from '../../assets/images/image-3.png';
 import plantCard1 from '../../assets/images/plant-card-1.png';
 import plantCard2 from '../../assets/images/plant-card-2.png';
@@ -60,7 +60,7 @@ export default function Home() {
           </Fade>
           <Fade right>
             <div className="home__collection--description-container">
-              <p>Have a look at our latest collection of our favorite plants. Choose your one and get them within a very short delivery time.</p>
+              <p>Confused with so many options? Concerned about plant care? Read the description to understand your desired plant. Better – ask for recommendations in our Facebook group.</p>
             </div>
           </Fade>
         </div>
@@ -73,9 +73,11 @@ export default function Home() {
               </div>
             </Bounce>
             <Fade left>
-              <h2>Our Plants</h2>
-              <p className='mb-5'>Have a look at our latest collection of our favorite plants. Choose your one and get them within a very short delivery time.</p>
-              <Button primary text='Buy Now'/>
+              <h2>Currently Hyped</h2>
+              <p className='mb-5'>These plants have all our attention now! Look into more options in our socials.</p>
+              <a href="https://www.facebook.com/planteasybangladesh" target='_blank'>
+                <Button primary text='Buy Now'/>
+              </a>
             </Fade>
             <div className="card-container-left">
               <Fade left>
