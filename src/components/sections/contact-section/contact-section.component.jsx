@@ -2,6 +2,9 @@ import React, {useRef} from 'react'
 import { useAlert } from 'react-alert'
 import emailjs from '@emailjs/browser';
 
+// COMPONENT
+import Button from '../../button/button.component';
+
 import './contact-section.style.scss'
 
 export default function ContactSection() {
@@ -30,7 +33,11 @@ export default function ContactSection() {
             <textarea name="message" placeholder='Your Message' className='input' rows='4' required />
             <input type="submit" value="Send" className='btn btn-primary' />
         </form>
-        
+        <div className='btn-container'>
+          <a href="https://www.facebook.com/groups/plant.easy.care.club/" target='_blank'>
+            <Button text='Join Our Workshop'/>
+          </a>
+        </div>
         <h4 className='contact-heading'>Contact</h4>
         <p className='contact-info'>plant.easy.bd@gmail.com | Phone: +880-1309-008355</p>
     </div>
